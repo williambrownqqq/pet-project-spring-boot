@@ -1,38 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2%;
+    align-items: center;
+    height: max-content;
+    padding: 2%;
+}
 
 .block__first {
-margin-left: 58px;
-max-width: 420px;
-width: 100%;
-height: 100vh;
+    max-width: 420px;
+    width: 100%;
+    height: max-content;
 }
 
 .text {
-    margin-top: 96px;
     font-family: 'Inter', sans-serif;
 }
 
 .text-main {
-    font-size: 32px;
+    font-size: calc(30px + 12 * (100vw / 1440));
     font-weight: 600;
 }
 
 .text-light {
     margin-top: 14px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .form {
     display: grid;
     grid-template-columns: auto;
-    gap:36px;
+    gap: 36px;
 }
 
 .forms {
-    margin-top: 86px;
+    margin-top: 60px;
 }
 
 
@@ -56,12 +63,12 @@ height: 100vh;
 }
 
 .buttons {
-    margin-top:40px;
-    display:grid;
+    margin-top: 40px;
+    display: grid;
     grid-template-columns: auto;
-    max-width:420px;
-    width:100%;
-    gap:16px;
+    max-width: 420px;
+    width: 100%;
+    gap: 16px;
     text-align: center;
 }
 
@@ -71,7 +78,7 @@ height: 100vh;
     border-radius: 6px;
     color: #FFFFFF;
     transition: background-color .2s ease, transform .2s ease;
-    border:none;
+    border: none;
 }
 
 .button-sign {
@@ -80,7 +87,7 @@ height: 100vh;
     align-items: center;
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
     border-radius: 6px;
-    border:none;
+    border: none;
     transition: background-color .2s ease, transform .2s ease;
 }
 
@@ -92,12 +99,12 @@ height: 100vh;
 }
 
 .button-account:hover {
-    background-color:#000;
+    background-color: #000;
 }
 
 .button-account:active {
     transform: scale(0.95);
-    background-color:#000;
+    background-color: #000;
 }
 
 .button-sign:hover {
@@ -110,7 +117,7 @@ height: 100vh;
 }
 
 .logIn {
-    margin-top: 75px;
+    margin-top: 40px;
     color: #000000;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -123,5 +130,15 @@ height: 100vh;
 }
 
 .logIN__href:active {
-    color:#000;
+    color: #000;
+}
+
+@media (max-width:1000px) {
+    .text-main {
+        text-align: center;
+    }
+
+    .text-light {
+        text-align: center;
+    }
 }
