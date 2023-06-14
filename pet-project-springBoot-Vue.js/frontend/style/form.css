@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2%;
+    align-items: center;
+    height: max-content;
+    padding: 2%;
+}
+
+.block__first {
+    max-width: 420px;
+    width: 100%;
+    height: max-content;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-main {
+    font-size: calc(30px + 12 * (100vw / 1440));
+    font-weight: 600;
+}
+
+.text-light {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 36px;
+}
+
+.forms {
+    margin-top: 60px;
+}
+
+
+
+.window {
+    color: #AAAAAA;
+    padding: 15px;
+    color: #000;
+    font-weight: 500;
+    max-width: 390px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    border: none;
+    transition: color .2s ease;
+}
+
+.window:focus {
+    color: rgb(225, 128, 225);
+}
+
+.buttons {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 420px;
+    width: 100%;
+    gap: 16px;
+    text-align: center;
+}
+
+.button-account {
+    background: #3A3A3A;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    color: #FFFFFF;
+    transition: background-color .2s ease, transform .2s ease;
+    border: none;
+}
+
+.button-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    border: none;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.button__text {
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.button-account:hover {
+    background-color: #000;
+}
+
+.button-account:active {
+    transform: scale(0.95);
+    background-color: #000;
+}
+
+.button-sign:hover {
+    background-color: #dad6d6;
+}
+
+.button-sign:active {
+    transform: scale(0.95);
+    background-color: #dad6d6;
+}
+
+.logIn {
+    margin-top: 40px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logIN__href {
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.logIN__href:active {
+    color: #000;
+}
+
+@media (max-width:1000px) {
+    .text-main {
+        text-align: center;
+    }
+
+    .text-light {
+        text-align: center;
+    }
+}
